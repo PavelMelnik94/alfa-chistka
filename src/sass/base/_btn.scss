@@ -1,0 +1,20 @@
+.btn {
+  width: 291px;
+  height: 57.28px;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.9134px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.btn--mobile {
+  width: 211.93px;
+  height: 40px;
+  font-size: 16.0796px;
+}

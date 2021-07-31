@@ -1,0 +1,13 @@
+@import 'libs/normalize';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/btn';
+@import 'base/positions';
+
+@import 'blocks/concept/concept';
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
