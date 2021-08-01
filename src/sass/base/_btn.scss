@@ -5,16 +5,14 @@
   color: var(--second-color);
   border-radius: 25px;
   border: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 22.9134px;
   line-height: 41px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.btn--mobile {
-  width: 211.93px;
-  height: 40px;
-  font-size: 16.0796px;
-}

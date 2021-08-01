@@ -1,78 +1,198 @@
 .concept {
-  @media (max-width: 575px) {
-    overflow: hidden;
+  &__social {
+    display: none;
+
+  }
+  overflow: hidden;
+  width: 100%;
+  height: 434px;
+  background-image: url("../img/concept/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__navbar{
     width: 100%;
-    height: 434px;
-    background-image: url("../img/concept/background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    &__navbar{
+    height: 61px;
+    padding: 20px 20px 14.5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 91px;
+    max-height: 26.5px;
+    img {
       width: 100%;
-      height: 61px;
-      padding: 20px 20px 14.5px 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    }
+  }
+  &__navigation {
+    display: none;
+  }
+  &__contacts {
+    width: 105px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
       align-items: center;
+      text-transform: uppercase;
+      color: var(--main-color);
+    }
+    &__number {
+      font-weight: 700;
+      font-size: 10px;
+      color: var(--main-color);
+      align-items: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:active {
+        text-decoration: none;
+        color: var(--main-color);
+      }
+    }
+
+  }
+  &__hero {
+    width: 300px;
+    height: 113px;
+    margin: 48px auto 0 auto;
+  }
+  &__title {
+    margin: 0 auto;
+    height: 69px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  &__subtitle {
+    margin: 15px 0;
+    height: 29px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .concept__btn__wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: '';
+      width: 281px;
+      height: 190px;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.29);
+      filter: blur(60.7186px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .btn {
+      width: 211.93px;
+      height: 40px;
+      font-size: 16.0796px;
+    }
+  }
+  .hamburger{
+    width: 20.86px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &__line {
+      width: 100%;
+      height: 2px;
+      background-color: var(--main-color);
+    }
+
+  }
+
+  //перевернутый телефон
+  @media (min-width: 576px) {
+    &__navbar{
+      height: 70px;
+      padding: 18px 14px 15px 14px;
     }
     &__logo {
-      max-width: 91px;
-      max-height: 26.5px;
-      img {
-        width: 100%;
-      }
+      max-width: 120px;
+      max-height: 35px;
     }
     &__navigation {
-      display: none;
+      display: flex;
+      width: 225px;
+      font-size: 14px;
+      height: 21.01px;
+      justify-content: space-between;
     }
     &__contacts {
-      width: 105px;
-      height: 28px;
+      width: 121px;
+      height: 50px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-evenly;
       &__text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        align-items: center;
-        text-transform: uppercase;
-        color: var(--main-color);
+        font-size: 14px;
       }
       &__number {
-        font-weight: bold;
-        font-size: 10px;
-        color: var(--main-color);
-        align-items: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        &:active {
-          text-decoration: none;
-          color: var(--main-color);
-        }
+        font-size: 11px;
       }
+    }
+    .hamburger{
+      display: none;
+    }
+  }
 
+
+  //планшет
+  @media (min-width: 768px) {
+    height: 685px;
+    &__navbar{
+      height: 78px;
+      padding: 20px 16px 17px 16px;
+    }
+    &__logo {
+      max-width: 148px;
+      max-height: 41px;
+    }
+    &__navigation {
+      display: flex;
+      width: 290px;
+      height: 21.01px;
+      justify-content: space-between;
+    }
+    &__contacts {
+      width: 176px;
+      height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      &__text {
+        font-size: 14px;
+      }
+      &__number {
+        font-size: 14px;
+      }
     }
     &__hero {
-      width: 300px;
-      height: 113px;
-      margin: 48px auto 0 auto;
+      width: 604.44px;
+      height: 201px;
+      margin: 79px auto 0 auto;
     }
     &__title {
-      margin: 0 auto;
-      height: 69px;
-      font-weight: bold;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+      font-size: 55px;
+      height: 101.03px;
+      line-height: 47px;
     }
     &__subtitle {
-      margin: 15px 0px;
-      height: 29px;
-      font-size: 15px;
-      text-align: center;
+      margin: 36px 0;
+      height: 63.81px;
+      font-size: 25px;
     }
     .concept__btn__wrapper {
       margin-top: 32px;
@@ -83,40 +203,122 @@
       z-index: 1;
       &:after {
         content: '';
-        width: 281px;
-        height: 190px;
-        position: absolute;
-        background: rgba(255, 255, 255, 0.29);
-        filter: blur(60.7186px);
-        border-radius: 50%;
-        z-index: -1;
+        width: 239px;
+        height: 671px;
+        transform: rotate(-90deg);
+      }
+      .btn {
+        width: 302px;
+        height: 57px;
+        font-size: 22px;
       }
     }
     .hamburger{
-      width: 20.86px;
-      height: 12px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      &__line {
-        width: 100%;
-        height: 2px;
-        background-color: var(--main-color);
-      }
+      display: none;
     }
   }
-  @media (max-width: 768px) {
+
+
+  //ноутбук
+  @media (min-width: 992px) {
 
   }
-  @media (max-width: 992px) {
-
-  }
-  @media (max-width: 1200px) {
-
-  }
+  //всё остальное
   @media (min-width: 1201px) {
-
+    height: 100vh;
+    &__navbar{
+      height: 78px;
+      padding: 12px 0 12px;
+    }
+    &__logo {
+      max-width: 168px;
+      max-height: 54px;
+    }
+    &__navigation {
+      display: flex;
+      width: 345px;
+      height: 25px;
+      justify-content: space-between;
+      font-size: 17px;
+    }
+    &__contacts {
+      width: 240px;
+      height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      &__text {
+        font-size: 17px;
+      }
+      &__number {
+        font-size: 20px;
+      }
+    }
+    &__hero {
+      width: 1028px;
+      height: 107px;
+      margin: 101px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__title {
+      width: 1028px;
+      height: 58px;
+      line-height: 57px;
+      justify-content: flex-start;
+    }
+    &__subtitle {
+      margin-top: 21px;
+      width: 718px;
+      height: 28px;
+      line-height: 28px;
+      text-align: left;
+      font-size: 24px;
+    }
+    .concept__btn__wrapper {
+      margin-top: 59px;
+      width: 291px;
+      height: 57.28px;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 1;
+      &:after {
+        content: '';
+        width: 239px;
+        height: 671px;
+        transform: rotate(-90deg);
+      }
+      .btn {
+        width: 302px;
+        height: 57px;
+        font-size: 22px;
+        z-index: 2;
+      }
+    }
+    .hamburger{
+      display: none;
+    }
+    &__social {
+      margin-top: 35px;
+      width: 280px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      //justify-content: space-between;
+      //align-self: start;
+      &__wrapper {
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      &__icon {
+        stroke: var(--main-color);
+      }
+    }
 }
 
 
