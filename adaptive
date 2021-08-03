@@ -1,0 +1,52 @@
+desktop first
+
+телефоны
+@media (max-width: 575px) { }
+
+перевернутые телефоны и мини планшеты
+@media (max-width: 768px) { }
+
+большие планшеты и мини ноутбуки
+@media (max-width: 992px) { }
+
+обычные нутбуки
+@media (max-width: 1200px) { }
+
+пк и всё остальное
+@media (min-width: 1201px) { }
+
+
+
+Тесть так мы двигались от большего к меньшему,
+но если мы хочешь работать с Mobile first,
+то сначала пишем обычные стили,
+а после в медиа-запросах указываем:
+
+@media (min-width: 576px)
+@media (min-width: 768px)
+@media (min-width: 992px)
+@media (min-width: 1200px)
+@media (min-width: 1400px)
+
+
+
+ //перевернутый телефон
+  @media (min-width: 576px) {
+
+  }
+
+
+  //планшет
+  @media (min-width: 768px) {
+
+  }
+
+
+  //ноутбук
+  @media (min-width: 992px) {
+
+  }
+  //всё остальное
+  @media (min-width: 1201px) {
+
+  }

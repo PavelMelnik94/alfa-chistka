@@ -1,0 +1,263 @@
+.what-are-we-fighting {
+  min-height: 1px;
+  margin-top: -1px;
+  padding-top: 44px;
+  padding-bottom: 60px;
+  background-color: #EAEAEA;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    min-height: 100px;
+    width: 284px;
+
+    margin-bottom: 154px;
+
+
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  &__description {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  .attention {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+      font-size: 20px;
+      line-height: 35px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 19px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    .phone-call > div,  a {
+      min-width: 320px;
+      font-size: 19px;
+      line-height: 28px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .what-are-we-fighting__btn {
+      margin-top: 54px;
+      min-width: 212px;
+      height: 40px;
+      font-weight: 500;
+      font-size: 16.0796px;
+      line-height: 29px;
+    }
+  }
+
+
+
+  //..1..2..3..4..5
+
+  .pseudo-one, .pseudo-two, .pseudo-three, .pseudo-four, .pseudo-five {
+    position: relative;
+    z-index: 1;
+    &:after {
+      text-transform: uppercase;
+      color: rgba(15, 15, 15, 0.12);
+      font-weight: 700;
+      font-size: 200px;
+      line-height: 36px;
+      position: absolute;
+      top: 33px;
+      left: -20px;
+    }
+  }
+
+  .pseudo-one {
+    &:after {
+      content: '1';
+    }
+  }
+
+  .pseudo-two {
+    &:after {
+      content: '2';
+    }
+  }
+
+  .pseudo-three {
+    &:after {
+      content: '3';
+    }
+  }
+
+  .pseudo-four {
+    &:after {
+      content: '4';
+    }
+  }
+
+  .pseudo-five {
+    &:after {
+      content: '5';
+    }
+  }
+
+
+}
+
+
+
+//перевернутый телефон
+@media (min-width: 576px) {
+.what-are-we-fighting {
+  .title {
+    margin-bottom: 95px;
+  }
+  &__item {
+    width: 355px;
+    margin-bottom: 130px;
+  }
+}
+}
+
+
+//планшет
+@media (min-width: 768px) {
+  .what-are-we-fighting {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    .title {
+      font-size: 35px;
+      line-height: 28px;
+      margin-bottom: 120px;
+    }
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 67px;
+    }
+    &__item {
+      width: 290px;
+      min-height: 158px;
+      margin-bottom: 100px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    .attention {
+      min-width: 100px;
+      max-width: 289px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-self: flex-start;
+      &__header {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+      }
+      &__text {
+        text-align: left;
+      }
+
+      .phone-call {
+        display: none;
+      }
+
+      .what-are-we-fighting__btn {
+        margin-top: 26px;
+        width: 285.33px;
+        height: 57.28px;
+        font-size: 22.9134px;
+        line-height: 41px;
+      }
+    }
+
+
+
+    //..1..2..3..4..5
+
+    .pseudo-one, .pseudo-two, .pseudo-three, .pseudo-four, .pseudo-five {
+      position: relative;
+      z-index: 1;
+      &:after {
+        text-transform: uppercase;
+        color: rgba(15, 15, 15, 0.12);
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 36px;
+        position: absolute;
+        top: 19px;
+        left: -40px;
+      }
+    }
+
+    .pseudo-one {
+      &:after {
+        content: '1';
+      }
+    }
+
+    .pseudo-two {
+      &:after {
+        content: '2';
+      }
+    }
+
+    .pseudo-three {
+      &:after {
+        content: '3';
+      }
+    }
+
+    .pseudo-four {
+      &:after {
+        content: '4';
+      }
+    }
+
+    .pseudo-five {
+      &:after {
+        content: '5';
+      }
+    }
+
+
+  }
+}
+
+
+//ноутбук
+@media (min-width: 992px) {
+
+}
+//всё остальное
+@media (min-width: 1201px) {
+.what-are-we-fighting {
+  padding-top: 65px;
+  padding-bottom: 124px;
+  .title {
+    margin: 0 0 95px 0;
+    justify-content: flex-start;
+  }
+  .attention {
+    &__header {
+      font-size: 22px;
+    }
+  }
+}
+}

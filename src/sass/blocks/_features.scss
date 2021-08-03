@@ -1,0 +1,115 @@
+.features {
+  .container {
+    padding: 0;
+  }
+  min-height: 925px;
+  background-color: #EAEAEA;
+  padding: 37px 20px 57px;
+  &__card {
+    width: 100%;
+    min-height: 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 38px;
+    &__icon {
+      margin-bottom: 19px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 15px;
+      line-height: 25px;
+      text-transform: initial;
+      font-weight: 500;
+      color: var(--main-color)
+    }
+    &__descr {
+      text-align: center;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+  .btn {
+    width: 211.93px;
+    height: 40px;
+    font-size: 16.0796px;
+    margin: 0 auto;
+  }
+
+
+  @media (min-width: 576px) {
+    min-height: 800px;
+  }
+
+
+  @media (min-width: 768px) {
+    min-height: 1000px;
+    padding: 60px 0px 104px;
+    &__card {
+      max-width: 400px;
+      margin:0 auto 55px auto;
+      &__icon {
+        margin-bottom: 16px;
+      }
+      &__title {
+        font-size: 30px;
+        line-height: 25px;
+        text-transform: initial;
+        margin-bottom: 15px;
+      }
+      &__descr {
+        text-align: center;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+    .btn {
+      width: 306.59px;
+      height: 57.28px;
+      font-size: 22.9134px;
+      line-height: 41px;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media (min-width: 1201px) {
+    min-height: 500px;
+    padding: 65px 0px 98px;
+    .title {
+      justify-content: flex-start;
+    }
+    .btn {
+      width: 292.57px;
+      height: 57.28px;
+    }
+    &__card__wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    &__card {
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 400px;
+      &__icon {
+        margin-bottom: 10px;
+
+      }
+      &__title {
+        min-height: 50px;
+        font-size: 30px;
+        text-align: left;
+      }
+      &__descr {
+        text-align: center;
+        text-align: left;
+      }
+    }
+
+  }
+
+}

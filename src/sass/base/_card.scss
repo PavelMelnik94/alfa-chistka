@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  &:not(:last-child) {
+    margin-bottom: 121px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 350px;
+    height: 588px;
+    &:last-child {
+      margin-bottom: 121px;
+    }
+  }
+}
+
+.card__cover {
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.card__content {
+  margin-top: 33px;
+  margin-bottom: 26px;
+  width: 100%;
+  min-height: 100px;
+  /* Take available height */
+  flex: 1;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card__price {
+  word-wrap: break-word;
+  font-size: 20px;
+  line-height: 28px;
+  width: 100%;
+  min-height: 100px;
+}
+

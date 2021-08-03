@@ -1,0 +1,84 @@
+.stock {
+  height: 419px;
+.swiper-slide__header {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+  .swiper-slide__text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+  .btn {
+    width: 211.93px;
+    height: 33.93px;
+    font-weight: 500;
+    font-size: 16.0796px;
+    line-height: 29px;
+  }
+  .swiper-pagination-bullet {
+    width: 7.5px;
+    height: 7.5px;
+  }
+
+  @media (min-width: 576px) {
+
+  }
+
+
+  //планшет
+  @media (min-width: 768px) {
+    height: 696px;
+    .swiper-slide__header {
+      font-size: 50px;
+      line-height: 28px;
+    }
+    .swiper-slide__text {
+      font-size: 50px;
+      line-height: 81px;
+    }
+    .btn {
+      width: 402.89px;
+      height: 79.31px;
+      font-size: 31.7239px;
+      line-height: 57px;
+    }
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+
+  //ноутбук
+  @media (min-width: 992px) {
+
+  }
+  //всё остальное
+  @media (min-width: 1201px) {
+    height: 572px;
+    .swiper-slide__header {
+      font-size: 50px;
+      line-height: 28px;
+    }
+    .swiper-slide__text {
+      font-size: 50px;
+      line-height: 81px;
+    }
+    .btn {
+      width: 292.57px;
+      height: 57.28px;
+      font-size: 22.9134px;
+      line-height: 41px;
+    }
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+
+}

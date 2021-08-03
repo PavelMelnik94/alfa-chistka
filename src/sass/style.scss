@@ -1,5 +1,3 @@
-@import 'libs/normalize';
-
 @import 'base/fonts';
 @import 'base/variables';
 @import 'base/btn';
@@ -7,11 +5,13 @@
 @import 'base/title';
 @import 'base/card';
 @import 'base/phone-call';
+@import 'base/slider';
 
 @import 'blocks/concept';
 @import 'blocks/features';
 @import 'blocks/price';
 @import 'blocks/what-are-we-fighting';
+@import 'blocks/stock';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -27,3 +27,5 @@ a {
         color: var(--main-color);
     }
 }
+
+

@@ -1,0 +1,30 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 66px;
+  position: relative;
+
+  &__text{
+    position: relative;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: -10px;
+      height: 2px;
+      background-color: var(--main-color);
+    }
+
+  }
+  @media (min-width: 768px) {
+    &__text {
+      font-size: 35px;
+      line-height: 28px;
+    }
+  }
+}
+

@@ -1,0 +1,99 @@
+.price {
+  min-height: 300px;
+  padding: 46px 0 151px;
+  background-color: #D1D1D0;
+  .container {
+    padding: 0 5px 0;
+  }
+  .title{
+    width: 253px;
+    margin: 0 auto;
+    &:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: -10px;
+      height: 2px;
+      background-color: var(--main-color);
+    }
+    &__text{
+      text-align: center;
+      &:before {
+        content: unset;
+      }
+    }
+  }
+  .card__wrapper {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .btn {
+    width: 240.72px;
+    height: 40.96px;
+    font-size: 16.4647px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+
+
+    //планшет
+    @media (min-width: 768px) {
+      padding: 60px 0 31px 0;
+      .container {
+        padding: 0;
+      }
+      .title {
+        width: 673px;
+        height: 48.16px;
+        margin-bottom: 99px;
+      }
+
+
+
+
+      .card__wrapper {
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 9.91px;
+      }
+
+      .btn {
+        width: 285.33px;
+        height: 57.28px;
+        font-size: 22.9134px;
+        line-height: 41px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+
+
+      //ноутбук
+      @media (min-width: 992px) {
+
+      }
+      //всё остальное
+      @media (min-width: 1201px) {
+      padding-top: 65px;
+        .title {
+          margin: 0 0 60px 0;
+        }
+        .btn {
+          width: 338.8px;
+          height: 57px;
+          margin: 0 auto;
+          font-size: 22.9134px;
+          line-height: 41px;
+        }
+      }
+
+    }
