@@ -5,18 +5,23 @@
 @import 'base/title';
 @import 'base/card';
 @import 'base/phone-call';
-@import 'base/slider';
+
 
 @import 'blocks/concept';
 @import 'blocks/features';
 @import 'blocks/price';
 @import 'blocks/what-are-we-fighting';
-@import 'blocks/stock';
+@import 'blocks/stock/stock';
+@import 'blocks/stock/stock-slider';
+@import 'blocks/testimonials/testimonials';
+@import 'blocks/testimonials/testimonials-slider';
+@import 'blocks/before-after';
 
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    color: var(--main-color)
 }
 
 a {
