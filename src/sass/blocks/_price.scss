@@ -79,8 +79,11 @@
 
       //ноутбук
       @media (min-width: 992px) {
+        .card__wrapper {
+          justify-content: center;
+        }
+        }
 
-      }
       //всё остальное
       @media (min-width: 1201px) {
       padding-top: 65px;

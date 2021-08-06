@@ -65,7 +65,7 @@ ready(function() {
             },
             // when window width is >= 480px
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30
             },
             // when window width is >= 640px
@@ -91,6 +91,25 @@ ready(function() {
             event.preventDefault()
             testimonialsSlider.slideNext()
         })
+
+
+
+        const actualWidth = screen.width;
+    const testimonialsContainer = document.querySelector('.testimonials > .container');
+
+    if (actualWidth >= 768 && actualWidth <= 1140) {
+        testimonialsContainer.classList.remove('container');
+        // testimonialsContainer.classList.add('container-fluid');
+    } else {
+        return null
+    }
+
+    // const containerPolymorph = document.getElementById('container-polymorph');
+    // const ipad = window.matchMedia('min-width: 768px');
+    // if (window.matchMedia('min-width: 768px').matches) {
+    //     containerPolymorph.classList.remove('container');
+    //     containerPolymorph.classList.add('container-fluid');
+    // }
 });
 
 
