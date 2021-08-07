@@ -1,5 +1,33 @@
+// гамбургер. открыть-закрыть мобильное меню.
+
+const hamburgerMenu = document.querySelector('.hamburger__menu'); // меню гамбургера
+
+document.getElementById('hamburger').addEventListener('click', e => {
+    hamburgerMenu.style.marginTop = '0px';
+}) // кнопка гамбургера
+
+document.querySelector('.hamburger-cross').addEventListener('click', e => {
+    hamburgerMenu.style.marginTop = '-228px';
+}); // кнопка закрытия меню
+
+const hamburgerMenuItems = document.querySelectorAll('.hamburger__menu__items');
+
+hamburgerMenuItems.forEach(item => {
+    item.addEventListener('click', e => {
+        hamburgerMenu.style.marginTop = '-228px';
+    })
+})
 
 
+// to-top
+
+window.onscroll = function () {
+    let scrolled = window.pageYOffset || document.documentElement.scrollTop,
+        topBtn = document.getElementById('topBtn');
+    if (scrolled > 2000 ) {
+        topBtn.classList.add('visible'); }
+    else { topBtn.classList.remove('visible');}
+}
 
 
 
@@ -13,7 +41,6 @@ const ready = function (cb) {
 };
 
 // Usage
-
 
 ready(function() {
 
@@ -39,7 +66,6 @@ ready(function() {
             crossFade: true
         },
     });
-
 
     let testimonialsSlider = new Swiper(".testimonials-swiper", {
         autoplay: {
@@ -76,7 +102,6 @@ ready(function() {
         }
     });
 
-
     //testimonials nav arrow
         //prev
     document.querySelector('.testimonials__prev-slide')
@@ -93,23 +118,20 @@ ready(function() {
         })
 
 
+    const actualWidth = screen.width; //ловим ширину экрана пользователя
 
-        const actualWidth = screen.width;
-    const testimonialsContainer = document.querySelector('.testimonials > .container');
-
-    if (actualWidth >= 768 && actualWidth <= 1140) {
-        testimonialsContainer.classList.remove('container');
-        // testimonialsContainer.classList.add('container-fluid');
-    } else {
-        return null
-    }
-
-    // const containerPolymorph = document.getElementById('container-polymorph');
-    // const ipad = window.matchMedia('min-width: 768px');
-    // if (window.matchMedia('min-width: 768px').matches) {
-    //     containerPolymorph.classList.remove('container');
-    //     containerPolymorph.classList.add('container-fluid');
+    // const testimonialsContainer = document.querySelector('.testimonials > .container');
+    //
+    // if (actualWidth >= 768 && actualWidth <= 1140) {
+    //     testimonialsContainer.classList.remove('container');
+    //     // testimonialsContainer.classList.add('container-fluid');
+    // } else {
+    //     return null
     // }
+
+
+
+
 });
 
 

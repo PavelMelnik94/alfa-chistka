@@ -3,14 +3,14 @@
   padding: 46px 0 151px;
   background-color: #D1D1D0;
   .container {
-    padding: 0 5px 0;
+    padding: 0;
   }
   .title{
     width: 253px;
     margin: 0 auto;
     &:before {
       content: '';
-      width: 100%;
+      width: 90%;
       position: absolute;
       bottom: -10px;
       height: 2px;
@@ -51,6 +51,9 @@
         width: 673px;
         height: 48.16px;
         margin-bottom: 99px;
+        &:before {
+          width: 95%;
+        }
       }
 
 
@@ -79,8 +82,13 @@
 
       //ноутбук
       @media (min-width: 992px) {
+        .card {
+          padding: 0;
+          max-width: 399px !important;
+        }
         .card__wrapper {
           justify-content: center;
+          gap: 20px;
         }
         }
 
@@ -89,6 +97,11 @@
       padding-top: 65px;
         .title {
           margin: 0 0 60px 0;
+          display: block;
+          &:before {
+            width: 95%;
+            bottom: 10px;
+          }
         }
         .btn {
           width: 338.8px;

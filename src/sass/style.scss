@@ -6,6 +6,7 @@
 @import 'base/card';
 @import 'base/phone-call';
 @import 'base/feedback-form';
+@import 'base/to-top';
 
 
 @import 'blocks/concept';
@@ -25,7 +26,6 @@
     padding: 0;
     color: var(--main-color);
     scroll-behavior: smooth;
-
 }
 
 a {
@@ -38,3 +38,9 @@ a {
 }
 
 
+@media (min-width: 1201px) {
+    .container {
+        width: 1240px;
+        padding: 0;
+    }
+}
