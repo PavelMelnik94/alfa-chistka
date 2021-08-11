@@ -20,10 +20,12 @@
   animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-
   &:hover {
     animation-name: bounce;
     -moz-animation-name: bounce;
+
+  }
+  &--modal {
 
   }
 
